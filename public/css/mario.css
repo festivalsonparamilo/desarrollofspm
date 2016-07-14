@@ -1,0 +1,90 @@
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-repeat: repeat-x;
+}
+#fondofb {
+	height: 600px;
+	width: 800px;
+}
+#todo {
+	width: 100%;
+}
+#grupo {
+	position: relative;
+	height: 600px;
+	width: 960px;
+	margin: auto;
+}
+#contene01 {
+	position: absolute;
+	height: 140px;
+	width: 800px;
+	left: 0px;
+	background-image: url(../Img/cabezamusicos.jpg);
+}
+#contene02 {
+	position: absolute;
+	height: 300px;
+	width: 800px;
+	top: 140px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	color: #666;
+}
+#texto1 {
+	position: absolute;
+	height: 190px;
+	width: 400px;
+	left: 250px;
+}
+#punto01 {
+	position: absolute;
+	height: 40px;
+	width: 40px;
+	left: 206px;
+	top: 12px;
+	background-image: url(../Img/punto.jpg);
+}
+#punto02 {
+	position: absolute;
+	height: 40px;
+	width: 40px;
+	left: 206px;
+	top: 80px;
+	background-image: url(../Img/punto.jpg);
+}
+#contene03 {
+	position: absolute;
+	height: 70px;
+	width: 800px;
+	top: 440px;
+	background-image: url(../Img/barrabajo.jpg);
+}
+#botregreso {
+	position: absolute;
+	height: 70px;
+	width: 250px;
+	background-image: url(../Img/salir01.jpg);
+}
+#botregreso:hover { 
+	background-image: url(../Img/salir02.jpg);
+}
+#botsiguiente {
+	position: absolute;
+	height: 70px;
+	width: 250px;
+	background-image: url(../Img/siguienteA.jpg);
+	left: 550px;
+}
+.resaltartex {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 16px;
+	color: #F60;
+}
+#botsiguiente:hover { 
+	background-image: url(../Img/siguienteB.jpg);
+}
