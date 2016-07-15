@@ -61,7 +61,7 @@ body {
 	position: absolute;
 	height: 70px;
 	width: 800px;
-	top: 440px;
+	top: 540px;
 	background-image: url(../Img/barrabajo.jpg);
 }
 #botregreso {
@@ -87,4 +87,27 @@ body {
 }
 #botsiguiente:hover { 
 	background-image: url(../Img/siguienteB.jpg);
+}
+
+#acuerdo {
+	position: absolute;
+	height: 90px;
+	width: 250px;
+	left: 460px;
+	/*top: 594px;*/
+	background-image: url(../Img/acuerdo01.jpg);
+}
+#acuerdo:hover { 
+	background-image: url(../Img/acuerdo02.jpg);
+}
+#noacuerdo {
+	position: absolute;
+	height: 90px;
+	width: 280px;
+	left: 60px;
+	/*top: 594px;*/
+	background-image: url(../Img/Noacuerdo01.jpg);
+}
+#noacuerdo:hover { 
+	background-image: url(../Img/Noacuerdo02.jpg);
 }

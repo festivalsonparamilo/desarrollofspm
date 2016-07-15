@@ -14,4 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
 Route::get('/formularioPrueba', function () {return view('formularioPrueba/cuerpo');});
+Route::get('/formularioPrueba/condiciones', function () {return view('formularioPrueba/condic');});

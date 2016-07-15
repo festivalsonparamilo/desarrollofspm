@@ -13,7 +13,7 @@
 @endsection
 
 @section('botones')
-	<a href="../index.html" target="_self"><div id="botregreso"></div></a>
-	<a href="Paso2 01.html" target="_self"><div id="botsiguiente"></div></a>
+	<a href="/" target="_self"><div id="botregreso"></div></a>
+	<a href="/formularioPrueba/condiciones" target="_self"><div id="botsiguiente"></div></a>
 
 @endsection

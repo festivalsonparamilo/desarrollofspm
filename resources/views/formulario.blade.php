@@ -4,8 +4,8 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>Músicos / Inscripciones Milo 2016</title>
         <!--<script src="../../Scripts/AC_RunActiveContent.js" type="text/javascript"></script>-->
-        <link rel="stylesheet" href="css/mario.css" >
-        <script type="text/css" src="css/mario.css"></script>
+        <link rel="stylesheet" href="/css/mario.css" >
+        <script type="text/css" src="/css/mario.css"></script>
         <script type="text/javascript">
         function MM_openBrWindow(theURL,winName,features) { //v2.0
           window.open(theURL,winName,features);
