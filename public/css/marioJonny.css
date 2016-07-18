@@ -1,0 +1,92 @@
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-repeat: repeat-x;
+}
+#fondofb {
+	height: 600px;
+	width: 800px;
+}
+#todo {
+	width: 100%;
+}
+#grupo {
+	position: relative;
+	height: 600px;
+	width: 960px;
+	margin: auto;
+}
+#contene01 {
+	position: absolute;
+	height: 237px;
+	width: 800px;
+	left: 0px;
+	background-color: #F00;
+	background-image: url(../Img/titu01.jpg);
+}
+#contene02 {
+	position: absolute;
+	height: 274px;
+	width: 800px;
+	top: 240px;
+}
+#bot01 {
+	position: absolute;
+	height: 125px;
+	width: 250px;
+	left: 150px;
+	background-image: url(../Img/botmusic01A.jpg);
+}
+#bot01:hover { 
+	background-image: url(../Img/botmusic01B.jpg);
+}
+#bot02 {
+	position: absolute;
+	height: 125px;
+	width: 250px;
+	left: 400px;
+	background-image: url(../Img/botgastro01A.jpg);
+}
+#bot02:hover { 
+	background-image: url(../Img/botgastro01B.jpg);
+}
+#bot03 {
+	position: absolute;
+	height: 125px;
+	width: 250px;
+	left: 150px;
+	top: 125px;
+	background-image: url(../Img/botartesa01A.jpg);
+}
+#bot03:hover { 
+	background-image: url(../Img/botartesa01B.jpg);
+}
+#bot04 {
+	position: absolute;
+	height: 125px;
+	width: 250px;
+	left: 400px;
+	top: 125px;
+	background-image: url(../Img/bottaller01A.jpg);
+}
+#bot04:hover { 
+	background-image: url(../Img/bottaller01B.jpg);
+}
+#contene03 {
+	position: absolute;
+	height: 70px;
+	width: 800px;
+	top: 514px;
+	background-image: url(../Img/barrabajo.jpg);
+}
+#botsalir {
+	position: absolute;
+	height: 70px;
+	width: 200px;
+	background-image: url(../Img/botsalir01.jpg);
+}
+#botsalir:hover { 
+	background-image: url(../Img/botsalir02.jpg);
+}
