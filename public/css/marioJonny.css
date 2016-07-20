@@ -28,9 +28,25 @@ body {
 }
 #contene02 {
 	position: absolute;
-	height: 274px;
+	height: 300px;
 	width: 800px;
-	top: 240px;
+	top: 140px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	color: #666;
+}
+#texto1 {
+	position: absolute;
+	height: 190px;
+	width: 400px;
+	left: 250px;
+}
+#punto {
+	position: absolute;
+	height: 40px;
+	width: 40px;
+	background-image: url(../Img/punto.jpg);
 }
 #bot01 {
 	position: absolute;
@@ -89,4 +105,10 @@ body {
 }
 #botsalir:hover { 
 	background-image: url(../Img/botsalir02.jpg);
+}
+#mensaje {
+	position: absolute;
+	height: 350px;
+	width: 800px;
+	background-image: url(../Img/losentimos.jpg);
 }

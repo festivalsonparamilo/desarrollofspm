@@ -4,7 +4,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>Son para Milo 2015</title>
 
-		<link rel="stylesheet" href="./css/marioJonny.css" >
+		<link rel="stylesheet" href="css/marioJonny.css" >
 		
 		<script type="text/javascript">
 		function MM_openBrWindow(theURL,winName,features) { //v2.0
