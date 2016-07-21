@@ -16,8 +16,8 @@ class RegistroController extends Controller
     public function intro($participante)
     {
         $aux = strcmp($participante,'musicos');
-        if ($aux == 0) {
-            return view('regist/'.$participante);
+        if ((strcmp($participante,'musicos') == 0) || (strcmp($participante,'tallerista') == 0) || (strcmp($participante,'arte-gast') == 0)) {
+            return view('regist/intro', compact('participante'));
         }else {
             return view('errors/errorRegistro');
         }

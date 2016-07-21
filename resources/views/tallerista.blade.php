@@ -7,7 +7,7 @@
 
     <body>
       <div>
-        <img src="/public/Img/cabezamusicos.jpg">
+        <h1>Talleristas</h1>
       </div>
       <div id="contene02">
         <h1>Contenido</h1>
