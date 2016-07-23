@@ -1,6 +1,7 @@
 @extends('musicos')
 
 @section('cuerpo')
+	<h1>ERROR</h1>
     <div id="mensaje"></div>
 @endsection
 

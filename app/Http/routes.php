@@ -20,9 +20,9 @@ Route::get('/formularioPrueba/condiciones', function () {return view('formulario
 
 //Registro de participantes
 Route::get('/registro', 'RegistroController@Select');
-Route::get('/registro/{participante}', 'RegistroController@intro')->where('note', '[a-z]+');
-Route::get('/registro/{participante}/cond', 'RegistroController@condition')->where('note', '[a-z]+');
-Route::get('/registro/{participante}/cond/{form}', 'RegistroController@forms')->where('note', '[a-z]+');
-Route::post('/registro/{participante}/cond/{form}', 'RegistroController@store')->where('note', '[a-z]+');
+Route::get('/registro/{participante}', 'RegistroController@intro')->where('participante', '[a-z]+');
+Route::get('/registro/{participante}/cond', 'RegistroController@condition')->where('participante', '[a-z]+');
+Route::get('/registro/{participante}/cond/ac', 'RegistroController@forms')->where('participante', '[a-z]+');
+Route::post('/registro/{participante}/cond/{form}', 'RegistroController@store')->where('participante', '[a-z]+');
 
 

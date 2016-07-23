@@ -23,7 +23,7 @@
 		  	<a href="/registro/musicos"><div id="bot01"></div></a>
 		    <a href="/registro/arte-gast"><div id="bot02"></div></a>
 		    <a href="/registro/arte-gast"><div id="bot03"></div></a>
-		    <a href="talleristas/tallerista"><div id="bot04"></div></a>
+		    <a href="/registro/tallerista"><div id="bot04"></div></a>
 		  </div>
 		  <div id="contene03">
 		  <a href="/"><div id="botsalir"></div></a>

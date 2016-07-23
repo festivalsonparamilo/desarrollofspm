@@ -1,19 +1,5 @@
-<h1>{{$participante}}</h1>
-@if( $participante == 'musicos')
+@extends($participante)
 
-	@extends('musicos')
-@endif
-
-@if( $participante == 'tallerista')
-
-	@extends('tallerista')
-@endif
-
-@if( $participante == 'arte-gast')
-
-	@extends('arte-gast')
-
-@endif
 
 @section('cuerpo')
 
@@ -28,7 +14,7 @@
 @endsection
 
 @section('botones')
-	<a href="/" target="_self"><div id="botregreso"></div></a>
-	<a href="/formularioPrueba/condiciones" target="_self"><div id="botsiguiente"></div></a>
+	<a href="/" target="_self"><div id="botregreso">home</div></a>
+	<a href="/registro/{{$participante}}/cond" target="_self"><div id="botsiguiente">sig</div></a>
 
 @endsection

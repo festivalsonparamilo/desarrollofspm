@@ -15,33 +15,47 @@ class RegistroController extends Controller
 
     public function intro($participante)
     {
-        $aux = strcmp($participante,'musicos');
-        if ((strcmp($participante,'musicos') == 0) || (strcmp($participante,'tallerista') == 0) || (strcmp($participante,'arte-gast') == 0)) {
-            return view('regist/intro', compact('participante'));
-        }else {
-            return view('errors/errorRegistro');
-        }
-    	
+        switch ($participante) {
+            case 'musicos':
+                return view('regist/introMusico', compact('participante'));
+                break;
+            case 'tallerista':
+                return view('regist/introTallerista', compact('participante'));
+                break;
+            case 'arte-gast':
+                return view('regist/introArte-gast', compact('participante'));
+                break;
+            default:
+                return view('errors/errorRegistro');
+                break;
+        }   	
     }
 
     public function condition($participante)
     {
-        $aux = strcmp($participante,'musico')+strcmp($participante,'arte-gast')+strcmp($participante,'tallerista');
-        if ($aux == 0) {
-            return view('regist/condi');
+        if ((strcmp($participante,'musicos') == 0) || (strcmp($participante,'arte-gast') == 0) || (strcmp($participante,'tallerista') == 0)) {
+            return view('regist/condi', compact('participante'));
         }else {
             return view('errors/errorRegistro');
         }
     }
 
-    public function forms($participante, $form)
+    public function forms($participante)
     {
-        $aux = strcmp($participante,'musico')+strcmp($participante,'arte-gast')+strcmp($participante,'tallerista');
-        if ($aux == 0) {
-            return view('regist/'.$participante);
-        }else {
-            return view('errors/errorRegistro');
-        }
+        switch ($participante) {
+            case 'musicos':
+                return view('regist/form1', compact('participante'));
+                break;
+            case 'tallerista':
+                return view('regist/form2', compact('participante'));
+                break;
+            case 'arte-gast':
+                return view('regist/form3', compact('participante'));
+                break;
+            default:
+                return view('errors/errorRegistro');
+                break;
+        } 
     }
 
     public function store($participante, $form)
