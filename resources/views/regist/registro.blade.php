@@ -1,33 +1,65 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title>Son para Milo 2015</title>
-
-		<link rel="stylesheet" href="public/css/marioJonny.css" >
-		
-		<script type="text/javascript">
-		function MM_openBrWindow(theURL,winName,features) { //v2.0
-		  window.open(theURL,winName,features);
-		}
-		</script>
-
-	</head>
-
-	<body>
-		<div id="todo">
-		<div id="grupo">
-		<div id="fondofb">
-		  <div id="contene01"></div>
-		  <div id="contene02">
-		  	<a href="/registro/musicos"><div id="bot01"></div></a>
-		    <a href="/registro/arte-gast"><div id="bot02"></div></a>
-		    <a href="/registro/arte-gast"><div id="bot03"></div></a>
-		    <a href="/registro/tallerista"><div id="bot04"></div></a>
-		  </div>
-		  <div id="contene03">
-		  <a href="/"><div id="botsalir"></div></a>
-		  </div>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Son para Milo 2016</title>
+	<meta charset="UTF-8" name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="/public/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/public/css/bootstrap-theme.css">
+	<link rel="stylesheet" type="text/css" href="/public/css/footer.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-8">
+				<img class="img-responsive" src="/public/Img/titu01.jpg">
+			</div>
+			<div class="col-md-2"></div>
 		</div>
-	</body>
+		<br>
+		<br>
+		<div class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-8">
+				<div class="row">
+					<div class="col-md-1"></div>
+					<div class="col-md-4">
+						<a href="/registro/musicos"><img class="img-responsive" src="/public/Img/botmusic01A.jpg" onmouseover="this.src='/public/Img/botmusic01B.jpg'" onmouseout="this.src='/public/Img/botmusic01A.jpg'"></a>
+					</div>
+					<div class="col-md-2"></div>
+					<div class="col-md-4">
+						<a href="/registro/gastronomos"><img class="img-responsive" src="/public/Img/botgastro01A.jpg" onmouseover="this.src='/public/Img/botgastro01B.jpg'" onmouseout="this.src='/public/Img/botgastro01A.jpg'"></a>
+					</div>
+					<div class="col-md-1"></div>
+				</div>
+				<br>
+				<br>
+				<div class="row">
+					<div class="col-md-1"></div>
+					<div class="col-md-4">
+						<a href="/registro/artesanos"><img class="img-responsive" src="/public/Img/botartesa01A.jpg" onmouseover="this.src='/public/Img/botartesa01B.jpg'" onmouseout="this.src='/public/Img/botartesa01A.jpg'"></a>
+					</div>
+					<div class="col-md-2"></div>
+					<div class="col-md-4">
+						<a href="/registro/talleristas"><img class="img-responsive" src="/public/Img/bottaller01A.jpg" onmouseover="this.src='/public/Img/bottaller01B.jpg'" onmouseout="this.src='/public/Img/bottaller01A.jpg'"></a>
+					</div>
+					<div class="col-md-1"></div>
+				</div>
+			</div>
+			<div class="col-md-2"></div>
+		</div>
+	</div>
+	<br>
+	<br>
+	<div class="container-fluid">
+		<div class="row" id="footer">
+			<div class="col-md-1"></div>
+			<div class="col-md-3">
+				<a href="/"><img class="img-responsive" src="/public/Img/botsalir01.jpg" onmouseover="this.src='/public/Img/botsalir02.jpg'" onmouseout="this.src='/public/Img/botsalir01.jpg'"></a>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="/public/js/jquery.js"></script>
+	<script type="text/javascript" src="/public/js/bootstrap.min.js"></script>
+</body>
 </html>

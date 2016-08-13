@@ -23,6 +23,7 @@ Route::get('/registro', 'RegistroController@Select');
 Route::get('/registro/{participante}', 'RegistroController@intro')->where('participante', '[a-z]+');
 Route::get('/registro/{participante}/cond', 'RegistroController@condition')->where('participante', '[a-z]+');
 Route::get('/registro/{participante}/cond/ac', 'RegistroController@forms')->where('participante', '[a-z]+');
+Route::get('/registro/{participante}/cond/noAc', 'RegistroController@noAcuerdo')->where('participante', '[a-z]+');
 Route::post('/registro/{participante}/cond/{form}', 'RegistroController@store')->where('participante', '[a-z]+');
 
 
