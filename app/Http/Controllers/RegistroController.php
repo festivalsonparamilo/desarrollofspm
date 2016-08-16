@@ -44,8 +44,9 @@ class RegistroController extends Controller
         return view('regist/noAcuerdo', compact('participante'));
     }
 
-    public function store($participante, $form)
+    public function store($participante)
     {
-    	dd($participante,$form);
+        $data = request()->all();
+    	dd($participante, $data);
     }
 }

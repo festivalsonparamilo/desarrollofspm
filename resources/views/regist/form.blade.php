@@ -20,7 +20,7 @@
         <div class="row">
           <div class="col-md-2"></div>
     <div class="col-md-8">
-    	<form class="form-horizontal" id="form1" name="form1" method="post" onsubmit="return validar();" action="/registro/{{$participante}}/cond/ac/formMusico">
+    	<form class="form-horizontal" id="form1" name="form1" method="post" onsubmit="return validar();" action={{ url('/registro/'.$participante.'/form') }}>
     		{!! csrf_field() !!}
       		<h4>Datos del Grupo</h4>
 
@@ -218,7 +218,8 @@
   @elseif ($participante == 'talleristas')
       <div class="col-md-2"></div>
       <div class="col-md-8">
-        <form class="form-horizontal" id="form1" name="form1" method="post" onsubmit="return validar();" action="http://www.festivalspm.esy.es/PHP/participante.php">
+        <form class="form-horizontal" id="form1" name="form1" method="post" onsubmit="return validar();" action={{ url('/registro/'.$participante.'/form') }}>
+              {!! csrf_field() !!}
               <h4>Datos del Tallerista</h4>
               <div class="form-group">
                 <label class="control-label col-md-4" for="nombre_C">Nombre:</label>
@@ -457,8 +458,8 @@
   @elseif ($participante == 'artesanos')
 <div class="col-md-2"></div>
       <div class="col-md-8">
-        <form class="form-horizontal" id="form1" name="form1" method="post" onsubmit="return validar();" action="http://www.festivalspm.esy.es/PHP/participante.php">
-              
+        <form class="form-horizontal" id="form1" name="form1" method="post" onsubmit="return validar();" action={{ url('/registro/'.$participante.'/form') }}>
+              {!! csrf_field() !!}
               <div class="form-group">
                 <label class="control-label col-md-4" for="nombre_C">Nombre:</label>
                 <div class="col-md-8">
@@ -612,7 +613,8 @@
   @elseif ($participante == 'gastronomos')
       <div class="col-md-2"></div>
       <div class="col-md-8">
-        <form class="form-horizontal" id="form1" name="form1" method="post" onsubmit="return validar();" action="http://www.festivalspm.esy.es/PHP/participante.php">
+        <form class="form-horizontal" id="form1" name="form1" method="post" onsubmit="return validar();" action={{ url('/registro/'.$participante.'/form') }}>
+              {!! csrf_field() !!}
               <div class="form-group">
                 <label class="control-label col-md-4" for="nombre_C">Nombre:</label>
                 <div class="col-md-8">
