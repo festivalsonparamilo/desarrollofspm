@@ -38,7 +38,7 @@
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">Jonas Laravel</div>
+                <div class="title">New Branch Laravel</div>
             </div>
         </div>
     </body>
