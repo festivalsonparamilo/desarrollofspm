@@ -13,11 +13,13 @@ class CreateAuxiliarsTable extends Migration
     public function up()
     {
         Schema::create('auxiliars', function (Blueprint $table) {
-          $table->engine = 'InnoDB';
-          $table->string('id_auxiliar')->index();
-          $table->integer('num_aux');
-          $table->tinyInteger('entrada');
-          $table->string('id_ṕarticipante')->references('id_participante')->on('participantes');
+          $table->engine = 'MyISAM';
+          $table->charset = 'utf8';
+          $table->string('id_auxiliar')->primary();
+          $table->string('nombre_aux')->nullable();
+          $table->integer('num_aux')->nullable();
+          $table->tinyInteger('entrada')->default(0);
+          $table->string('id_participante')->references('id_participante')->on('participantes');
             $table->timestamps();
         });
     }

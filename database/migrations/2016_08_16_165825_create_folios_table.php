@@ -13,9 +13,10 @@ class CreateFoliosTable extends Migration
     public function up()
     {
         Schema::create('folios', function (Blueprint $table) {
-            $table->engine = 'InnoDB';
+            $table->engine = 'MyISAM';
+            $table->charset = 'utf8';
             $table->string('id_folio')->index();
-            $table->string('cadena');
+            $table->string('cadena')->default('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx');
             $table->timestamps();
         });
     }

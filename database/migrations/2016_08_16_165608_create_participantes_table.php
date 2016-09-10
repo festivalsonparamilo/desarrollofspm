@@ -13,21 +13,22 @@ class CreateParticipantesTable extends Migration
     public function up()
     {
         Schema::create('participantes', function (Blueprint $table) {
-          $table->engine = 'InnoDB';
-         $table->string('id_participante')->index();
+         $table->engine = 'MyISAM';
+         $table->charset = 'utf8';
+         $table->string('id_participante')->primary();
          $table->string('nombre');
-         $table->integer('edad');
-         $table->integer('estado');
-         $table->string('ciudad');
-         $table->string('tel_casa');
-         $table->string('tel_celu');
-         $table->string('e_mail');
-         $table->text('descripcion');
-         $table->integer('antiguedad');
-         $table->integer('categoria');
-         $table->tinyInteger('entrada');
-         $table->string('img');
-            $table->timestamps();
+         $table->integer('edad')->nullable();
+         $table->integer('estado')->nullable();
+         $table->string('ciudad')->nullable();
+         $table->string('tel_casa')->nullable();
+         $table->string('tel_celu')->nullable();
+         $table->string('e_mail')->nullable();
+         $table->text('descripcion')->nullable();
+         $table->integer('antiguedad')->default(1);
+         $table->integer('categoria')->nullable();
+         $table->tinyInteger('entrada')->default(0);
+         $table->string('img')->nullable();
+         $table->timestamps();
         });
     }
 
