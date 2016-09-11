@@ -10,5 +10,5 @@ class participante extends Model
     protected $table = 'participantes';
     protected $primaryKey = 'id_participante';
 
-
+ 
 }

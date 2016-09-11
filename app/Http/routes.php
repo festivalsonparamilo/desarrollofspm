@@ -10,6 +10,7 @@
 | and give it the controller to call when that URI is requested.
 |
 */
+use App\Http\Controllers\DB;
 
 Route::get('/', function () {
     return view('welcome');
@@ -26,5 +27,8 @@ Route::get('/registro/{participante}/cond/ac', 'RegistroController@forms')->wher
 Route::get('/registro/{participante}/cond/noAc', 'RegistroController@noAcuerdo')->where('participante', '[a-z]+');
 Route::post('/registro/{participante}/form', 'RegistroController@store')->where('participante', '[a-z]+');
 Route::get('/dateParticipantes', 'Busqueda@oneParticipante');
+Route::get('/name/{participante}', 'Busqueda@name');
+Route::get('/mail/{participante}', 'Busqueda@xmail');
+Route::get('/join','Busqueda@withaux');
 
 
