@@ -26,5 +26,6 @@ Route::get('/registro/{participante}/cond/ac', 'RegistroController@forms')->wher
 Route::get('/registro/{participante}/cond/noAc', 'RegistroController@noAcuerdo')->where('participante', '[a-z]+');
 Route::post('/registro/{participante}/form', 'RegistroController@store')->where('participante', '[a-z]+');
 Route::get('/dateParticipantes', 'Busqueda@oneParticipante');
-
+Route::get('/ids','Busqueda@xID');
+Route::get('/rel','Busqueda@rel');
 

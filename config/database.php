@@ -54,10 +54,10 @@ return [
 
         'mysql' => [
             'driver'    => 'mysql',
-            'host'      => env('DB_HOST', 'mysql'),
-            'database'  => env('DB_DATABASE', 'u454748439_wuhyj'),
-            'username'  => env('DB_USERNAME', 'u454748439_vusyb'),
-            'password'  => env('DB_PASSWORD', 'NuPyGetyzy'),
+            'host'      => env('DB_HOST', 'localhost'),
+            'database'  => env('DB_DATABASE', 'elmilo'),
+            'username'  => env('DB_USERNAME', 'root'),
+            'password'  => env('DB_PASSWORD', 'root'),
             'charset'   => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix'    => '',
