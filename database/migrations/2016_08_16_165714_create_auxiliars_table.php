@@ -19,8 +19,9 @@ class CreateAuxiliarsTable extends Migration
           $table->string('nombre_aux')->nullable();
           $table->integer('num_aux')->nullable();
           $table->tinyInteger('entrada')->default(0);
-          $table->string('id_participante')->references('id_participante')->on('participantes');
-            $table->timestamps();
+          $table->String('id_participante');
+          $table->foreign('id_participante')->references('id_participante')->on('participantes');
+          $table->timestamps();
         });
     }
 

@@ -10,4 +10,8 @@ class auxiliar extends Model
     protected $table = 'auxiliars';
     protected $primaryKey = 'id_auxiliar';
     
+    public function participante()
+    {
+    	return $this->belongsTo('App\participante','id_participante');
+    }
 }

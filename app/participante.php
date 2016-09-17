@@ -10,5 +10,8 @@ class participante extends Model
     protected $table = 'participantes';
     protected $primaryKey = 'id_participante';
 
-
+   public function auxiliares()
+   {
+   	 return $this->hasMany('App\auxiliar','id_participante');
+   }
 }
